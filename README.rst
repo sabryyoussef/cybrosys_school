@@ -1,4 +1,3 @@
-======
 School
 ======
 
@@ -8,9 +7,9 @@ School
     :stub-columns: 1
 
     * - docs
-      - |tech-docs| |odoo13-docs| |help|
+      - |tech-docs| |odoo17-docs| |odoo18-docs| |help|
     * - tests
-      - | |python37| |odoo13| |travis| |coverall|
+      - | |python37| |odoo17| |odoo18| |travis| |coverall|
     * - license
       - |github-license|
     * - contribute
@@ -22,9 +21,13 @@ School
     :target: https://www.cybrosys.com/blog/how-to-create-module-in-odoo12
     :alt: Documentation Source
 
-.. |odoo13-docs| image:: http://img.shields.io/badge/13.0-docs-875A7B.svg?style=flat&colorA=8F8F8F
-    :target: https://www.odoo.com/documentation/13.0/index.html
-    :alt: Odoo 13 Documentation
+.. |odoo17-docs| image:: http://img.shields.io/badge/17.0-docs-875A7B.svg?style=flat&colorA=8F8F8F
+    :target: https://www.odoo.com/documentation/17.0/index.html
+    :alt: Odoo 17 Documentation
+
+.. |odoo18-docs| image:: http://img.shields.io/badge/18.0-docs-875A7B.svg?style=flat&colorA=8F8F8F
+    :target: https://www.odoo.com/documentation/18.0/index.html
+    :alt: Odoo 18 Documentation
 
 .. |help| image:: http://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F
     :target: https://www.odoo.com/forum/help-1
@@ -58,9 +61,13 @@ School
     :target: https://www.python.org/downloads/release/python-375/
     :alt: Python 3.7.5 version
 
-.. |odoo13| image:: https://img.shields.io/badge/Odoo-13-blue
-    :target: https://github.com/odoo/odoo/tree/13.0
-    :alt: Odoo 13 version
+.. |odoo17| image:: https://img.shields.io/badge/Odoo-17-blue
+    :target: https://github.com/odoo/odoo/tree/17.0
+    :alt: Odoo 17 version
+
+.. |odoo18| image:: https://img.shields.io/badge/Odoo-18-blue
+    :target: https://github.com/odoo/odoo/tree/18.0
+    :alt: Odoo 18 version
 
 .. |travis| image:: https://travis-ci.org/macagua/cybrosys_school.svg?branch=master
     :target: https://travis-ci.org/macagua/cybrosys_school
@@ -76,23 +83,21 @@ School
 About
 =====
 
-School, is a Odoo 13 module that let you:
+School is an Odoo module that lets you:
 
 - Manage Students Information.
+- Supports Odoo versions 13, 17, and 18.
 
 
 Features
 ========
 
-This Odoo 13 module include the follow technical features included:
+This Odoo module includes the following technical features:
 
 - Data demonstration support.
-
 - Internationalisation (i18n) support.
-
 - Tests units support.
-
-- ACL customs support.
+- ACL customisation support.
 
 
 Dependencies
@@ -100,7 +105,7 @@ Dependencies
 
 This module requires the following dependencies:
 
-- odoo 13 > https://github.com/odoo/odoo
+- odoo 13, 17, and 18 > https://github.com/odoo/odoo
 
 
 Install
@@ -120,7 +125,7 @@ Move ``cybrosys_school`` folder into ``extra-addons`` Odoo directory:
     $ mv cybrosys_school /full/path/to/extra-addons/
 
 
-Restart the Odoo instance server, login and got to **Apps** > **School** > **Install**
+Restart the Odoo instance server, log in and go to **Apps** > **School** > **Install**
 
 .. figure:: https://raw.githubusercontent.com/macagua/cybrosys_school/master/static/description/install_module.png
     :align: center
@@ -129,7 +134,7 @@ Restart the Odoo instance server, login and got to **Apps** > **School** > **Ins
 
     Install 'School' Module
 
-Then go to Main menu at left top corner and click to **School** > **Students** and click to **Edit** button for edit it or click to **Create** or create a new student.
+Then go to the main menu at the top-left corner and click **School** > **Students**. Click the **Edit** button to edit an existing student or click **Create** to add a new student.
 
 .. figure:: https://raw.githubusercontent.com/macagua/cybrosys_school/master/static/description/manage_app.png
     :align: center
@@ -142,7 +147,7 @@ Then go to Main menu at left top corner and click to **School** > **Students** a
 Testing
 =======
 
-For run the module tests, with the following command:
+To run the module tests, use the following command:
 
 ::
 
@@ -161,41 +166,33 @@ Contribute
 License
 =======
 
-- The project is licensed under the AGPL-3.
+- This project is licensed under the AGPL-3.
 
 
 References
 ==========
 
-The followings are the links using as references for development this Odoo 13 module:
+The following links were used as references for developing and upgrading this Odoo module:
 
 Development
 -----------
 
 - `How to Create a Module in Odoo 12 <https://www.cybrosys.com/blog/how-to-create-module-in-odoo12>`_.
-
 - `How to Create Module in Odoo v12 - Search View and Filters <https://www.cybrosys.com/blog/building-module-in-odoo-v12-defining-search-view-and-filters>`_.
-
 - `How to Create Module in Odoo 12 - Defining the Views <https://www.cybrosys.com/blog/how-to-create-module-in-odoo-v12-defining-views>`_.
-
 - `How to Add Chatter to Form View in Odoo v12 <https://www.cybrosys.com/blog/how-to-add-chatter-to-form-view-in-odoo-v12>`_.
-
 - `How to Add Custom Fields to Existing Views in Odoo v12 <https://www.cybrosys.com/blog/adding-custom-fields-to-existing-views-in-odoo-v12>`_.
-
 - `How to Define Header, Statusbar, and Buttons in Odoo v12 <https://www.cybrosys.com/blog/defining-header-statusbar-and-buttons-in-odoo-v12>`_.
-
+- Added support for Odoo 17 and 18 versions as part of the upgrade.
 
 Quality assurance
 -----------------
 
 - `Automated testing in Odoo <https://www.surekhatech.com/blog/automated-testing-in-odoo>`_.
-
 - `Odoo Experience 2018 - Improve the Quality of Your Modules with Automated Tests <https://www.youtube.com/watch?v=jZddEWFdUcM>`_.
-
 
 Translations
 ------------
 
 - `Language Translation in Odoo 12 <https://www.cybrosys.com/blog/language-translation-odoo-12>`_.
-
 - `How to load translations in Odoo <https://www.youtube.com/watch?v=ce5zMG7EGtE>`_.
